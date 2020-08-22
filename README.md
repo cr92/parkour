@@ -42,6 +42,8 @@ The system should be able to accept a filename as a parameter at the command pro
 - commands should be in the small case
 - executing `create_parking_lot` multiple times will display `cannot re-instantiate parking lot` message. Only the first occurrence will create a parking lot.
 - executing other commands before `create_parking_lot` will display `parking lot does not exist` message.
+- unsupported commands will display `cannot handle unknown operation` message.
+- commands failing to satisfy format/args before will display `invalid instruction format` message.
 
 
 #### Setting up:
