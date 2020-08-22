@@ -1,0 +1,31 @@
+{
+  "name": "parking_lot",
+  "version": "1.0.0",
+  "description": "A simple parking lot backend",
+  "engines": {
+    "node": "12.18.3"
+  },
+  "bin": {
+    "parkour": "./main.js"
+  },
+  "scripts": {
+    "test": "npx nyc ava test/**/*.test.js",
+    "lint": "npx eslint {src,test}/** --fix"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/classes/**/*.js"
+    ]
+  },
+  "keywords": [],
+  "author": "agni_18_roy@yahoo.com",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.11.1",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nyc": "^15.1.0"
+  }
+}
