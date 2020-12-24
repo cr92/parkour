@@ -9,7 +9,7 @@
     "parkour": "./main.js"
   },
   "scripts": {
-    "test": "npx nyc ava test/**/*.test.js",
+    "test": "npx nyc --reporter=lcov ava test/**/*.test.js",
     "lint": "npx eslint {src,test}/** --fix"
   },
   "nyc": {
